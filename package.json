@@ -1,20 +1,26 @@
 {
-  "name": "pixG",
+  "name": "pixg",
   "version": "1.0.0",
   "description": "instagram picture loader",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Micheal",
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.5.5",
     "express": "^4.14.0",
     "instagram-node": "^0.5.8"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Cob007/pixG"
+    "url": "git+https://github.com/Cob007/PiX_G.git"
   },
+  "bugs": {
+    "url": "https://github.com/Cob007/PiX_G/issues"
+  },
+  "homepage": "https://github.com/Cob007/PiX_G#readme"
 }

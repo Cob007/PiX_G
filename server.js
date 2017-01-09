@@ -13,7 +13,7 @@ ig.use({
 
 
 /*tells the node where to locate the site resource*/
-app.use(express.static(__dirname + '/public'));
+app.use(express.static( __dirname + '/public'));
 
 /*set the view engine to ejs*/
 app.set('view engine', 'ejs');
