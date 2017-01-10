@@ -4,6 +4,7 @@
 /*grabbing the dependencies package*/
 var express = require('express');
 var app = express();
+
 var ig = require("instagram-node").instagram();
 
 //Configuring our APP
@@ -18,6 +19,10 @@ app.use(express.static( __dirname + '/public'));
 /*set the view engine to ejs*/
 app.set('view engine', 'ejs');
 
+
+
+var port = process.env.PORT || 8080;
+
 /*Home page route*/
 app.get('/', function (req, res) {
     //use the instagram package to get popular images
@@ -28,5 +33,6 @@ app.get('/', function (req, res) {
 });
 
 /*starting the server*/
-app.listen(8080);
-console.log("App started at port 8080");
+app.listen(port, function(){
+    console.log("App started at port 8080");
+});
